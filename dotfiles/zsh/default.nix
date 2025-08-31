@@ -10,7 +10,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ll = "ls -al";
+      ls = "eza --icons=always";
     };
 
     history.size = 1000;
@@ -25,6 +25,7 @@
     ];
 
     initContent = ''
+      eval "$(zoxide init zsh)"
       source ~/.zsh/plugins/powerlevel10k/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
       [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
     '';
