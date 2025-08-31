@@ -18,6 +18,7 @@
         pkgs.slurp
         pkgs.swappy
         pkgs.swayidle
+	pkgs.tmux
         pkgs.unzip
 	pkgs.waybar
         pkgs.wofi
