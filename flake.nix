@@ -33,15 +33,37 @@
         inputs.nixpkgs.follows = "nixpkgs";
         inputs.darwin.follows = "";
       };
+
+      darwin = {
+        url = "github:LnL7/nix-darwin/master";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+
+      nix-homebrew = {
+        url = "github:zhaofengli-wip/nix-homebrew";
+      };
+
+      homebrew-bundle = {
+        url = "github:homebrew/homebrew-bundle";
+        flake = false;
+      };
+
+      homebrew-core = {
+        url = "github:homebrew/homebrew-core";
+        flake = false;
+      };
+
+      homebrew-cask = {
+        url = "github:homebrew/homebrew-cask";
+        flake = false;
+      };
      
     };
 
   outputs = { self, nixpkgs, nixpkgs-stable, agenix, home-manager, hyprland, lanzaboote, nur, ... }@inputs: 
     let
-      system = "x86_64-linux";
       username = "jens";
       pkgsForSystem = import nixpkgs {
-        inherit system;
         config = {
           allowUnfree = true;
         };
@@ -52,7 +74,7 @@
     in {
       nixosConfigurations = {
         nix-pad  = lib.nixosSystem {
-          inherit system;
+          system = "x86_64-linux";
           modules = [
             ./hosts/nix-pad/configuration.nix
             agenix.nixosModules.default
@@ -67,24 +89,25 @@
             }
 	    {
 	      environment.systemPackages = [
-		agenix.packages.${system}.default
+		agenix.packages.x86_64-linux.default
 	      ];
 	    }
           ];
         };
+      };
 
-        nix-server  = lib.nixosSystem {
-          inherit system;
-          modules = [
-            ./hosts/nix-server/configuration.nix
-            agenix.nixosModules.default
-            home-manager.nixosModules.home-manager
-            lanzaboote.nixosModules.lanzaboote
-            {
-              home-manager.users.${username} = import ./home/nix-server/home.nix;
-            }
-          ];
-        };
+      darwinConfigurations = {
+        system = "aarch64-darwin";
+	specialArgs = inputs;
+        modules = [
+	  home-manager.nixosModules.home-manager {
+	    sharedModules = [
+	    ];
+	    useGlobalPkgs = true;
+	    useUserPackages = true;
+#	    user.${username} = { config, pkgs, lib, ... }:  
+	  }
+	];
       };
 
       homeConfigurations = {
