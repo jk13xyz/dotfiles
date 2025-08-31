@@ -21,6 +21,7 @@
     ../../dotfiles/gpg/default.nix
     ../../dotfiles/hyprland/config.nix
     ../../dotfiles/hyprland/hyprpaper/default.nix
+    ../../dotfiles/ncspot/default.nix
     ../../dotfiles/neofetch/default.nix
     ../../dotfiles/waybar/default.nix
     ../../dotfiles/zsh
