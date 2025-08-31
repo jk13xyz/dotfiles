@@ -15,13 +15,14 @@
   programs.home-manager.enable = true;
 
   imports = [
+    ../../dotfiles/alacritty/default.nix
     ../../dotfiles/firefox/default.nix
     ../../dotfiles/git/default.nix
     ../../dotfiles/gpg/default.nix
-    ../../dotfiles/hyprland/config.nix
+    ../../dotfiles/hyprland/hyprland.nix
     ../../dotfiles/hyprland/hyprpaper/default.nix
     ../../dotfiles/neofetch/default.nix
-    ../../dotfiles/waybar/config.nix
-    ../../dotfiles/zsh/default.nix
+    ../../dotfiles/waybar/default.nix
+    ../../dotfiles/zsh
   ];
 }
