@@ -27,5 +27,12 @@
 	pkgs.zoxide
         yubikey-personalization
         yubikey-manager
+
+	# Ham Radio
+
+	pkgs.wsjtx
+	pkgs.gridtracker
+	pkgs.hamlib_4
+	pkgs.hamrs
     ];
 }

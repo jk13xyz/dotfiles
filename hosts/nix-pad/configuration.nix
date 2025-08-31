@@ -23,6 +23,8 @@
     };
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.systemd-boot.enable = lib.mkForce true;
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.efi.canTouchEfiVariables = true;
