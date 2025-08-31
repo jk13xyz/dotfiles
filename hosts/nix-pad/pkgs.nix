@@ -7,7 +7,6 @@
         pkgs.clipman
         pkgs.grim
         pkgs.htop
-        pkgs.kitty
         pkgs.mako
         pkgs.polkit
         pkgs.pavucontrol

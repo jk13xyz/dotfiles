@@ -19,7 +19,7 @@
     ../../dotfiles/firefox/default.nix
     ../../dotfiles/git/default.nix
     ../../dotfiles/gpg/default.nix
-    ../../dotfiles/hyprland/hyprland.nix
+    ../../dotfiles/hyprland/config.nix
     ../../dotfiles/hyprland/hyprpaper/default.nix
     ../../dotfiles/neofetch/default.nix
     ../../dotfiles/waybar/default.nix
