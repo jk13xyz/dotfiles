@@ -17,7 +17,7 @@
         pkgs.ssh-to-age
         pkgs.slurp
         pkgs.swappy
-        pkgs.swayidled
+        pkgs.swayidle
         pkgs.unzip
 	pkgs.waybar
         pkgs.wofi
