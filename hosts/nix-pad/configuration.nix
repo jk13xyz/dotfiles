@@ -10,6 +10,7 @@
 #      ./vpn.nix
       ../common/fonts.nix      
       ../common/locale.nix
+      ../common/bluetooth.nix
 #      ../common/wireless.nix
 #      ../../dotfiles/gdm/default.nix
       ../../dotfiles/hyprland/default.nix
