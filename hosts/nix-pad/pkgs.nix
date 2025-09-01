@@ -8,6 +8,7 @@
 	pkgs.eza
         pkgs.grim
         pkgs.htop
+	pkgs.lazygit
         pkgs.mako
         pkgs.polkit
         pkgs.pavucontrol
