@@ -16,6 +16,7 @@
 
   imports = [
 #    ../../dotfiles/alacritty/default.nix
+    ../../dotfiles/calcure/default.nix
     ../../dotfiles/firefox/default.nix
     ../../dotfiles/git/default.nix
     ../../dotfiles/gpg/default.nix

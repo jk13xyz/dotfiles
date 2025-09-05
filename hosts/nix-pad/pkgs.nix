@@ -4,6 +4,7 @@
         wget
         pkgs.age
         pkgs.brightnessctl
+	pkgs.calcure
         pkgs.clipman
 	pkgs.eza
         pkgs.grim
