@@ -1,7 +1,10 @@
+{ config, pkgs, ...  }:
 {
-  programs.neofetch = {
-    enable = true
+  home = {
+    packages = with pkgs; [
+      pkgs.fastfetch
+    ];
   };
 
-  home.file."./config/fastfetch/config.jsonc".source = ./config.jsonc;
+  home.file.".config/fastfetch/config.jsonc".source = ./config.jsonc;
 }

@@ -9,6 +9,7 @@
 	pkgs.eza
         pkgs.grim
         pkgs.htop
+	pkgs.kitty
 	pkgs.lazygit
         pkgs.mako
         pkgs.polkit

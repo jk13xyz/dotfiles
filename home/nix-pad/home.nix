@@ -23,7 +23,7 @@
     ../../dotfiles/gpg/default.nix
     ../../dotfiles/hyprland/config.nix
     ../../dotfiles/hyprland/hyprpaper/default.nix
-    ../../dotfiles/kitty/default.nix
+    ../../dotfiles/kitty/config.nix
     ../../dotfiles/ncspot/default.nix
 #    ../../dotfiles/neofetch/default.nix
     ../../dotfiles/waybar/default.nix
