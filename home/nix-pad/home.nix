@@ -17,6 +17,7 @@
   imports = [
 #    ../../dotfiles/alacritty/default.nix
     ../../dotfiles/calcure/default.nix
+    ../../dotfiles/fastfetch/default.nix
     ../../dotfiles/firefox/default.nix
     ../../dotfiles/git/default.nix
     ../../dotfiles/gpg/default.nix
@@ -24,7 +25,7 @@
     ../../dotfiles/hyprland/hyprpaper/default.nix
     ../../dotfiles/kitty/default.nix
     ../../dotfiles/ncspot/default.nix
-    ../../dotfiles/neofetch/default.nix
+#    ../../dotfiles/neofetch/default.nix
     ../../dotfiles/waybar/default.nix
     ../../dotfiles/zsh
   ];
